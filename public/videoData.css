@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  --ttmagenta: rgba(238, 29, 82, 0.8);
+}
+
+header {  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin-top: 40px;
+  height: 48px;
+  width: 126px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: var(--ttmagenta);
+  cursor: pointer;
+}
+
+div.video {
+  width: 325px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--ttmagenta);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+blockquote {
+  border-style: solid;
+  border-color:  var(--ttmagenta);
+  border-width: 2px;
+  border-radius: 10px;
+  background-color:var(--ttmagenta);
+}
+
+iframe {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+h2 {  
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  padding: 12px 0px 6px 0px;
+}
+
+.icons {
+  margin-top: 20px;
+  color: var(--ttmagenta);
+  font-size: 40px;
+  transform: rotate(45deg) scaleX(-1);
+}
+
+#reload {
+  margin-top: 0px;
+  background-color: white;
+}
+
+#logo {
+    font-family: 'Boogaloo', cursive;
+    font-size: 32px;
+}
+
+/*for tablet*/
+@media (min-width: 700px) {
+  body {
+    margin: 0 40px;
+    margin-top: 60px;
+  }
+
+  main {
+    margin-top: 40px;
+  }
+
+  button {
+    font-size: 20px;
+    height: 60px;
+    width: 145px;
+    margin-top: 60px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+
+  .icons {
+    font-size: 56px;
+    margin-top: 30px;
+  }
+
+  #logo {
+    font-size: 48px;
+  }
+}
+
+/*for desktop*/
+@media (min-width: 900px) {
+  button {
+    height: 75px;
+    width: 160px;
+  }
+
+  .icons {
+    font-size: 64px;
+    margin-top: 40px;
+  }
+
+  #continue {
+    position: absolute;
+    right: 40px;
+    top: 800px;
+  }
+}
+

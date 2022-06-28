@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+body {
+  margin: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  height: 45px;
+  width: 95px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(238, 29, 82, 0.8 );
+  cursor: pointer;
+}
+
+label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+input {
+  padding-left: 15px;
+  height: 35px;
+  border-radius: 12px;
+  border: 2px solid silver;
+  color: black;
+  font-size: 16px;
+}
+
+div.input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 70%;
+  min-width: 200px;
+}
+
+div.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  background-color: rgba(238, 29, 82, 0.9); /* For browsers that do not support gradients */
+  background-image: linear-gradient(110deg, rgba(238, 29, 82, 0.9), rgb(105, 201, 208));
+  padding: 40px 0;
+  margin: 30px;
+}
+
+#logo {
+  color: black;
+  font-family: 'Boogaloo', cursive;
+  font-size: 32px;
+}
+
+
+#form_header > h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#form_header {
+  display: flex;
+  align-items: center;
+}
+
+#username {
+  border-color: rgb(105, 201, 208);
+}
+
+#continue_button {
+  margin-top: 15px;
+}
+
+/*for tablet*/
+@media (min-width: 700px) {  
+  body {
+    margin: 0 40px;
+    margin-top: 80px;
+  }
+
+  header, main {   
+    max-width: 600px;
+  }
+  button {
+    font-size: 20px;
+    height: 60px;
+    width: 145px;
+  }
+
+  input {
+    height: 45px;
+    padding-left: 20px;
+  }
+
+  div.input {
+    margin: 25px;
+    width: 70%;
+  }
+
+  div.container {
+    margin: 60px;
+  }
+
+  #form_header > h2 {
+    font-size: 24px;
+  }
+
+  #logo {
+    font-size: 48px;
+  }
+}
+
+/*for desktop*/
+@media (min-width: 900px) {  
+  header {
+    justify-content: center;
+  }
+
+  button {
+    height: 75px;
+    width: 160px;
+  }
+
+  input {
+    height: 55px;
+    padding-left: 25px;
+  }
+
+  #videos_button {
+    position: absolute;
+    right: 100px;
+  }
+}
